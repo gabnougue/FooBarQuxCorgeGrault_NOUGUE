@@ -1,4 +1,4 @@
-package FooBarQuxCorgeGrault_NOUGUE.src.main;
+package com.jad;
 
 import java.util.List;
 

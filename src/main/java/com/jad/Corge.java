@@ -1,4 +1,4 @@
-package FooBarQuxCorgeGrault_NOUGUE.src.main;
+package com.jad;
 
 public class Corge {
     private Foo foo;
