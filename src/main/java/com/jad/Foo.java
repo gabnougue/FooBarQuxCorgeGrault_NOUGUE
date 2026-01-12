@@ -2,6 +2,8 @@ package com.jad;
 
 import java.util.List;
 
+import com.jad.Grault;
+
 public class Foo {
     private Bar bar;
     private List<Baz> bazs;
@@ -9,19 +11,39 @@ public class Foo {
     private Corge corge;
     private List<Grault> graults;
 
-    public Foo(Bar bar, List<Baz> bazs, Qux qux, Corge corge, List<Grault> graults) {
+    public Foo(Bar bar) {
         this.bar = bar;
-        this.bazs = bazs;
-        this.qux = qux;
-        this.corge = corge;
-        this.graults = graults;
     }
 
     public void addBaz(Baz baz) {
         this.bazs.add(baz);
     }
 
-    public void addGrault(Grault grault) {
+    public void addGrault() {
+        Grault grault = new Grault(this);
         this.graults.add(grault);
+    }
+
+    // Getters
+
+    public Bar getBar() {
+        return bar;
+    }
+    public List<Baz> getBazs() {
+        return bazs;
+    }
+    public Qux getQux() {
+        return qux;
+    }
+    public Corge getCorge() {
+        return corge;
+    }
+    public List<Grault> getGraults() {
+        return graults;
+    }
+
+    // Setters
+    public void setCorge(Corge corge) {
+        this.corge = corge;
     }
 }

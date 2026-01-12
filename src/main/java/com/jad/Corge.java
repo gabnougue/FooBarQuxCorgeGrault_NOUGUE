@@ -6,5 +6,13 @@ public class Corge {
     public Corge(Foo foo) {
         this.foo = foo;
     }
+
+    public Foo getFoo() {
+        return foo;
+    }
+
+    public void setFoo(Foo foo) {
+        this.foo = foo;
+    }
     
 }
