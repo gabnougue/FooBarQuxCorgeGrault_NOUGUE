@@ -47,6 +47,10 @@ public class Foo {
 
     // Setters
     public void setCorge(Corge corge) {
+        if (this.corge != null) {
+            this.corge.setFoo(null);
+        }
         this.corge = corge;
+        corge.setFoo(this);
     }
 }
