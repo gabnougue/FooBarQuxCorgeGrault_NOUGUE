@@ -13,6 +13,10 @@ public class Foo {
 
     public Foo(Bar bar) {
         this.bar = bar;
+        this.bazs = new ArrayList<>();
+        this.qux = new Qux();
+        this.corge = new Corge(this);
+        this.graults = new ArrayList<>();
     }
 
     public void addBaz(Baz baz) {
@@ -25,7 +29,6 @@ public class Foo {
     }
 
     // Getters
-
     public Bar getBar() {
         return bar;
     }
